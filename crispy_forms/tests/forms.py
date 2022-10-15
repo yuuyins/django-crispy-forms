@@ -69,6 +69,8 @@ class SelectSampleForm(forms.Form):
 class CrispyTestModel(models.Model):
     email = models.CharField(max_length=20)
     password = models.CharField(max_length=20)
+    class Meta:
+        app_label = 'crispy'
 
 
 class SampleForm3(forms.ModelForm):
